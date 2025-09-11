@@ -177,3 +177,28 @@ footer {
   color: #888;
   font-size: 14px;
 }
+/* ==== Scroll Reveal ==== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==== Neon Card ==== */
+.neon-card {
+  background: rgba(20, 20, 20, 0.9);
+  border: 1px solid #ffd700;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 0 15px #ffd70055, 0 0 30px #ff880033;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.neon-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px #ffd700aa, 0 0 50px #ff8800aa;
+}
