@@ -73,7 +73,8 @@ body {
   font-family: 'Orbitron', sans-serif;
   transition: all 0.3s;
 }
-.nav-links li a:hover {
+.nav-links li a:hover, 
+.nav-links li a.active {
   background: #ffd700;
   color: #111;
   box-shadow: 0 0 12px #ffd700;
