@@ -27,27 +27,16 @@
 
   <!-- Content -->
   <section class="page-section reveal">
-  <h2>About Kenari Coin</h2>
-  <div class="neon-card">
-    <p>
-      Kenari Coin (KN) is a community-driven token built on Binance Smart Chain. 
-      With innovative features such as staking, swapping, and liquidity rewards, 
-      KN empowers holders to participate in decentralized finance (DeFi) 
-      with transparency and fairness.
-    </p>
-  </div>
-</section>
-  <section class="page-section reveal">
-  <h2>About Kenari Coin</h2>
-  <div class="neon-card">
-    <p>
-      Kenari Coin (KN) is a community-driven token built on Binance Smart Chain. 
-      With innovative features such as staking, swapping, and liquidity rewards, 
-      KN empowers holders to participate in decentralized finance (DeFi) 
-      with transparency and fairness.
-    </p>
-  </div>
-</section>
+    <h2>About Kenari Coin</h2>
+    <div class="neon-card">
+      <p>
+        Kenari Coin (KN) is a community-driven token built on Binance Smart Chain. 
+        With innovative features such as staking, swapping, and liquidity rewards, 
+        KN empowers holders to participate in decentralized finance (DeFi) 
+        with transparency and fairness.
+      </p>
+    </div>
+  </section>
 
   <footer>
     <p>© 2025 Kenari Coin. All Rights Reserved.</p>
@@ -57,6 +46,25 @@
     function toggleMenu() {
       document.querySelector(".nav-links").classList.toggle("active");
     }
+
+    // Scroll Reveal
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll(".reveal");
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 80;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll(); // biar muncul langsung waktu halaman dibuka
   </script>
 </body>
 </html>
