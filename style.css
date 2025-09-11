@@ -211,7 +211,9 @@ footer {
 }
 
 .social-btn {
-  display: inline-block;
+  display: flex;              /* biar ikon & teks sejajar */
+  align-items: center;
+  gap: 8px;                   /* jarak ikon & teks */
   padding: 10px 16px;
   background: transparent;
   border: 1px solid #ffd700;
@@ -221,6 +223,10 @@ footer {
   text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 0 8px #ffd70055;
+}
+
+.social-btn i {
+  font-size: 18px;            /* ukuran ikon */
 }
 
 .social-btn:hover {
