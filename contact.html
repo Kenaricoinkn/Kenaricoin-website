@@ -32,12 +32,24 @@
   </p>
   <p>Follow us:</p>
   <div class="social-links">
-    <a href="https://x.com/itsmeaukwa36342?t=C-DtewyE-vk7ds0VTCT1Qw&s=09" target="_blank" class="social-btn">Twitter</a>
-    <a href="https://t.me/KenariCoinKnc" target="_blank" class="social-btn">Telegram</a>
-    <a href="https://discord.gg/yourdiscord" target="_blank" class="social-btn">Discord</a>
-    <a href="https://www.linkedin.com/yourlinkedin" target="_blank" class="social-btn">LinkedIn</a>
-    <a href="https://www.instagram.com/yourinstagram" target="_blank" class="social-btn">Instagram</a>
-    <a href="https://www.facebook.com/yourfacebook" target="_blank" class="social-btn">Facebook</a>
+    <a href="https://x.com/itsmeaukwa36342?t=C-DtewyE-vk7ds0VTCT1Qw&s=09" target="_blank" class="social-btn">
+      <i class="fab fa-twitter"></i> Twitter
+    </a>
+    <a href="https://t.me/KenariCoinKnc" target="_blank" class="social-btn">
+      <i class="fab fa-telegram"></i> Telegram
+    </a>
+    <a href="https://discord.gg/yourdiscord" target="_blank" class="social-btn">
+      <i class="fab fa-discord"></i> Discord
+    </a>
+    <a href="https://www.linkedin.com/yourlinkedin" target="_blank" class="social-btn">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://www.instagram.com/yourinstagram" target="_blank" class="social-btn">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://www.facebook.com/yourfacebook" target="_blank" class="social-btn">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
   </div>
 </section>
 
@@ -46,9 +58,30 @@
   </footer>
 
   <script>
-    function toggleMenu() {
-      document.querySelector(".nav-links").classList.toggle("active");
-    }
-  </script>
+  // Hamburger menu toggle
+  function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+  }
+
+  // Scroll reveal effect
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll(".reveal");
+    const windowHeight = window.innerHeight;
+    const elementVisible = 80;
+
+    reveals.forEach(el => {
+      const elementTop = el.getBoundingClientRect().top;
+      if (elementTop < windowHeight - elementVisible) {
+        el.classList.add("active");
+      } else {
+        el.classList.remove("active");
+      }
+    });
+  }
+
+  // Jalankan saat scroll & saat halaman pertama kali dibuka
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll);
+</script>
 </body>
 </html>
