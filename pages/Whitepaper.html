@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Whitepaper - Kenari Coin (KN)</title>
+
+  <!-- style + fonts (pastikan style.css ada di folder yang sama) -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo" onclick="window.location.href='index.html'">
+      <img src="img/logo.png" alt="KenariCoin Logo" class="logo-img"/>
+      <span>KenariCoin</span>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tokenomics.html">Tokenomics</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+      <li><a href="market.html">Market</a></li>
+      <li><a href="whitepaper.html" class="active">Whitepaper</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>KenariCoin Whitepaper</h1>
+    <p>Ringkasan visi, tokenomics, roadmap, dan keamanan KenariCoin (KN).</p>
+    <a class="btn" href="docs/kenari-whitepaper.pdf" target="_blank" rel="noopener">
+  📄 Download PDF
+</a>
+  </section>
+
+  <!-- WHITEPAPER CONTENT -->
+  <section class="page-section reveal">
+    <h2>1. Pendahuluan</h2>
+    <div class="neon-card">
+      <p>
+        KenariCoin (KN) adalah aset digital berbasis standar BEP-20 yang berjalan di jaringan BNB Smart Chain (BSC).
+        Didesain untuk menghadirkan solusi keuangan terdesentralisasi (DeFi) yang inklusif, cepat, dan ramah komunitas.
+      </p>
+    </div>
+  </section>
+
+  <section class="page-section reveal">
+    <h2>2. Masalah yang Ingin Diselesaikan</h2>
+    <div class="neon-card">
+      <ul>
+        <li>Biaya transaksi tinggi di beberapa jaringan</li>
+        <li>Kurangnya edukasi & akses bagi pengguna baru</li>
+        <li>Banyak token tanpa utilitas nyata dan komunitas pasif</li>
+      </ul>
+      <p>KenariCoin hadir untuk memberikan alternatif: biaya rendah, komunitas aktif, serta utilitas nyata melalui staking & reward system.</p>
+    </div>
+  </section>
+
+  <section class="page-section reveal">
+    <h2>3. Visi & Misi</h2>
+    <div class="neon-card">
+      <p><strong>Visi:</strong> Menjadi aset digital pilihan utama bagi investor dan pengguna harian yang mencari kecepatan, biaya rendah, dan keuntungan nyata dari DeFi.</p>
+      <p><strong>Misi:</strong></p>
+      <ul>
+        <li>Membentuk ekosistem DeFi yang inklusif</li>
+        <li>Memberikan imbal hasil melalui staking</li>
+        <li>Mendukung pertumbuhan komunitas melalui airdrop & faucet</li>
+        <li>Menyediakan platform yang aman, transparan, dan mudah</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="page-section reveal">
+    <h2>4. Tokenomics</h2>
+    <div class="neon-card">
+      <p><strong>Nama Token:</strong> KenariCoin (KN)</p>
+      <p><strong>Standar:</strong> BEP-20 on BSC</p>
+      <p><strong>Decimals:</strong> 2</p>
+      <p><strong>Total Supply:</strong> 500,000,000,000,000 KN</p>
+
+      <h4>Distribusi</h4>
+      <ul>
+        <li>Staking & Reward Pool – 40% (200 Triliun KN)</li>
+        <li>Liquidity Pool (DEX) – 20% (100 Triliun KN)</li>
+        <li>Airdrop & Faucet – 15% (75 Triliun KN)</li>
+        <li>Tim & Pengembangan – 15% (75 Triliun KN)</li>
+        <li>Cadangan Ekosistem – 10% (50 Triliun KN)</li>
+      </ul>
+
+      <p><strong>Contract:</strong>
+        <a href="https://bscscan.com/token/0x1390f63AF92448c46368443496a2bfc1469558de" target="_blank" rel="noopener">
+          0x1390f63AF92448c46368443496a2bfc1469558de
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <section class="page-section reveal">
+    <h2>5. Fitur Utama</h2>
+    <div class="neon-card">
+      <ul>
+        <li>Staking: pengguna memperoleh reward dengan mengunci KN</li>
+        <li>Leaderboard: peringkat top stakers</li>
+        <li>Faucet & Airdrop: dukung adopsi komunitas</li>
+        <li>Biaya transaksi rendah via BSC</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="page-section reveal">
+    <h2>6. Roadmap (Ringkasan)</h2>
+    <div class="neon-card">
+      <ol>
+        <li><strong>Q1 2025:</strong> Testnet & Faucet/Staking Beta</li>
+        <li><strong>Q2 2025:</strong> Mainnet Launch, Listing DEX (PancakeSwap), Airdrop</li>
+        <li><strong>Q3 2025:</strong> Dashboard Upgrade & Kolaborasi</li>
+        <li><strong>Q4 2025:</strong> Apply ke CoinMarketCap & CoinGecko, Ekosistem DeFi</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="page-section reveal">
+    <h2>7. Keamanan & Transparansi</h2>
+    <div class="neon-card">
+      <ul>
+        <li>Smart contract diverifikasi di BscScan</li>
+        <li>Audit keamanan: direncanakan (akan diumumkan jika selesai)</li>
+        <li>Dashboard & kode open-source (plan)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="page-section reveal">
+    <h2>8. Kontak Resmi</h2>
+    <div class="neon-card">
+      <p>Email: <a href="mailto:kenaricoinkn@gmail.com">kenaricoinkn@gmail.com</a></p>
+      <p>Telegram: <a href="https://t.me/KenariCoinKnc" target="_blank" rel="noopener">t.me/KenariCoinKnc</a></p>
+      <p>Website: <a href="https://kenaricoinkn.netlify.app/" target="_blank" rel="noopener">kenaricoinkn.netlify.app</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Kenari Coin. All Rights Reserved.</p>
+  </footer>
+
+  <!-- SCRIPTS: toggleMenu + revealOnScroll -->
+  <script>
+    // hamburger toggle
+    function toggleMenu() {
+      document.querySelector(".nav-links").classList.toggle("active");
+    }
+
+    // scroll reveal (adds .active to .reveal elements when visible)
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll(".reveal");
+      const windowHeight = window.innerHeight;
+      const elementVisible = 80;
+
+      reveals.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - elementVisible) {
+          el.classList.add("active");
+        } else {
+          el.classList.remove("active");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    // run once when page loads so elements in viewport are visible immediately
+    window.addEventListener("load", () => {
+      revealOnScroll();
+    });
+  </script>
+</body>
+</html>

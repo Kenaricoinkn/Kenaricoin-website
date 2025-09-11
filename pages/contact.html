@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Kenari Coin</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo" onclick="window.location.href='index.html'">
+      <img src="img/Logo.png" alt="KenariCoin Logo" class="logo-img"/>
+      <span>KenariCoin</span>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="tokenomics.html">Tokenomics</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+      <li><a href="market.html">Market</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+ <section class="page-section reveal">
+  <h2>Contact & Community</h2>
+  <p>
+    Email: 
+    <a href="mailto:kenaricoinkn@gmail.com">kenaricoinkn@gmail.com</a>
+  </p>
+  <p>Follow us:</p>
+  <div class="social-links">
+    <a href="https://x.com/itsmeaukwa36342?t=C-DtewyE-vk7ds0VTCT1Qw&s=09" target="_blank" class="social-btn">
+      <i class="fab fa-twitter"></i> Twitter
+    </a>
+    <a href="https://t.me/KenariCoinKnc" target="_blank" class="social-btn">
+      <i class="fab fa-telegram"></i> Telegram
+    </a>
+    <a href="https://discord.gg/yourdiscord" target="_blank" class="social-btn">
+      <i class="fab fa-discord"></i> Discord
+    </a>
+    <a href="https://www.linkedin.com/yourlinkedin" target="_blank" class="social-btn">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://www.instagram.com/yourinstagram" target="_blank" class="social-btn">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://www.facebook.com/yourfacebook" target="_blank" class="social-btn">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2025 Kenari Coin. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+  // Hamburger menu toggle
+  function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+  }
+
+  // Scroll reveal effect
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll(".reveal");
+    const windowHeight = window.innerHeight;
+    const elementVisible = 80;
+
+    reveals.forEach(el => {
+      const elementTop = el.getBoundingClientRect().top;
+      if (elementTop < windowHeight - elementVisible) {
+        el.classList.add("active");
+      } else {
+        el.classList.remove("active");
+      }
+    });
+  }
+
+  // Jalankan saat scroll & saat halaman pertama kali dibuka
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll);
+</script>
+</body>
+</html>
